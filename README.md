@@ -28,28 +28,7 @@ The `segment_data/` directory contains the raw data segmented by attack class, a
 
 ---
 
-## 🗂 Repository Structure
-MSTC_IDS-for-Cyber-Physical-Intrusion-Detection-in-Unmanned-Aerial-Vehicles/
-│
-├── segment_data/ # Segmented dataset organized by attack type
-│ ├── <attack_1>/
-│ ├── <attack_2>/
-│ └── ...
-│
-├── models/ # MSTC model definition(s)
-├── utils/ # Data loading, preprocessing, metrics
-├── train.py # Training script
-├── evaluate.py # Evaluation / inference script
-├── requirements.txt # Python dependencies
-├── config.yaml # Hyperparameters and paths
-└── README.md
-
-
-> Adjust file/folder names to match your actual implementation if they differ.
-
----
-
-##🧠 Model Overview
+## 🧠 Model Overview
 The MSTC (Multi-Scale Temporal Convolutional) network extracts features at multiple temporal resolutions using parallel convolutional branches with different kernel sizes. This allows the model to capture both:
 
 Short-term anomalies (e.g., sudden packet drops, spoofed GPS jumps)
@@ -60,7 +39,7 @@ The extracted multi-scale features are fused and passed through dense layers for
 
 ---
 
-##📈 Results
+## 📈 Results
 Evaluation metrics reported per attack segment typically include:
 
 Metric	Description
